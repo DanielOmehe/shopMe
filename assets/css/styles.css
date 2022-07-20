@@ -1,0 +1,1325 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+     height: 200vh;
+}
+
+#header{
+     width: 100%;
+     height: 100vh;
+     background: #fff;
+}
+
+.navbar{
+     width: 100%;
+     padding: 20px 5%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 0 auto;
+}
+
+.hamburger-menu{
+     width: 60px;
+     height: 60px;
+     margin-right: -30px;
+     display: none;
+}
+
+.bar{
+     width: 90%;
+     height: 6px;
+     border-radius: 5px;
+     background: #fff;
+     margin: 10px;
+}
+
+.list-items{
+     display: inline-block;
+     list-style: none;
+}
+
+.nav-links{
+     text-decoration: none;
+     margin: 20px 40px;
+     color: #3f51b5;
+}
+
+.product{
+     width: 100%;
+     height: 80%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     margin: 10px 0 50px 0;
+     padding: 0 20px;
+}
+
+.product-image {
+     width: 40%;
+     height: 600px;
+     margin: 20px;
+}
+
+.product-image img{
+     width: 100%;
+}
+
+.product-details{
+     width: 40%;
+     height: 700px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.categories{
+     font-size: 20px;
+     font-weight: 100;
+}
+
+.product-details h2{
+     font-size: 40px;
+     font-weight: 500;  
+}
+
+.product-details small{
+     float: left;
+     font-size: 18px;
+}
+
+.product-details select{
+     font-size: 20px;
+     width: 200px;
+}
+
+.disabled{
+     font-size: 20px;
+}
+
+.product-details label{
+     font-size: 20px;
+     margin: 0;
+}
+
+.product-details button{
+     padding: 0;
+     background: #3f51b4;
+     color: #fff;
+     font-size: 15px;
+     outline: none;
+     border: none;
+     width: 200px;
+     cursor: pointer;
+     padding: 10px 0;
+     margin-bottom: 20px;
+}
+
+.product-details p{
+     padding-right: 50px;
+}
+
+.related-products{
+     width: 100%;
+     margin: 50px 0 50px 0;
+     display: flex;
+     flex-direction: column;
+}
+
+input[type = "number"]{
+     width: 55px;
+     outline: none;
+}
+
+.title{
+     width: 100%;
+     background: #3f51b4;
+     color: #fff;
+     padding: 5px 10px;
+     text-align: center;
+     box-shadow: inset 0 0 100px rgba(0, 0, 0, .17);
+}
+
+.related-products-details{
+     display: flex;
+     width: 100%;
+     padding: 0;
+     align-items: center;
+     margin: 10px auto;
+}
+
+.clothings-box{
+     width: 20%;
+     height: 450px;
+     margin: 5px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 3px;
+     position: relative;
+     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     overflow: hidden;
+}
+
+.shoes-box{
+     width: 20%;
+     height: 400px;
+     margin: 30px 20px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 3px;
+     position: relative;
+     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     overflow: hidden;
+}
+
+.watches-box{
+     width: 20%;
+     height: 400px;
+     margin: 5px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 3px;
+     position: relative;
+     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     overflow: hidden;
+}
+
+.clothings-box img{
+     width: 100%;
+     height: 70%;
+}
+
+.shoes-box img{
+     width: 100%;
+     height: 70%;
+}
+
+.watches-box img{
+     width: 100%;
+     height: 70%;
+}
+
+.clothings-box p{
+     font-size: 16px;
+     font-weight: 400;
+     letter-spacing: .5px;
+     padding-left: 10px;
+}
+
+.shoes-box p{
+     font-size: 16px;
+     font-weight: 400;
+     letter-spacing: .5px;
+     padding-left: 10px;
+}
+
+.watches-box p{
+     font-size: 16px;
+     font-weight: 400;
+     letter-spacing: .5px;
+     padding-left: 10px;
+}
+
+.clothings-box small{
+     float: left;
+     padding-left: 10px;
+     font-size: 16px;
+}
+
+.shoes-box small{
+     float: left;
+     padding-left: 10px;
+     font-size: 16px;
+}
+
+.watches-box small{
+     float: left;
+     padding-left: 10px;
+     font-size: 16px;
+}
+
+.rating{
+     color: orange;
+     font-size: 14px;
+     padding-left: 10px;
+     padding-bottom: -20px;
+}
+
+.clothings-box button{
+     padding: 0;
+     background: #3f51b4;
+     color: #fff;
+     font-size: 15px;
+     outline: none;
+     border: none;
+     cursor: pointer;
+     width: 120px;
+     padding: 5px 0;
+     width: 95%;
+     position: absolute;
+     left: 5px;
+     top: 92%;
+}
+
+.shoes-box button{
+     padding: 0;
+     background: #3f51b4;
+     color: #fff;
+     font-size: 15px;
+     outline: none;
+     border: none;
+     cursor: pointer;
+     width: 120px;
+     padding: 5px 0;
+     width: 95%;
+     position: absolute;
+     left: 5px;
+     top: 92%;
+}
+
+.watches-box button{
+     padding: 0;
+     background: #3f51b4;
+     color: #fff;
+     font-size: 15px;
+     outline: none;
+     border: none;
+     cursor: pointer;
+     width: 120px;
+     padding: 5px 0;
+     width: 95%;
+     position: absolute;
+     left: 10px;
+     top: 91%;
+}
+
+.clothings-box:hover{
+     transform: translateY(-10px);
+     transition: all .6s ease-in-out;
+}
+
+.shoes-box:hover{
+     transform: translateY(-10px);
+     transition: all .6s ease-in-out;
+}
+.watches-box:hover{
+     transform: translateY(-10px);
+     transition: all .6s ease-in-out;
+}
+
+#footer{
+     top: 100%;
+     width: 100%;
+     color: #fff;
+     display: flex;
+     justify-content: space-around;
+     background: #333;
+     padding: 100px 10%;
+     align-items: center;
+}
+
+.col-1{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.menu-links{
+     display: flex;
+     flex-direction: column;
+     text-decoration: none;
+     color: #fff;
+     font-size: 20px;
+     font-weight: 200;
+}
+
+.col-2 h2{
+     text-align: left;
+     font-weight: 300;
+     padding: 0 15px;
+     font-size: 30px;
+     margin-bottom: 20px;
+}
+
+.col-2 p{
+     padding: 0 15px;
+     font-size: 20px;
+     font-weight: 200;
+}
+
+.col-2 input{
+     padding: 20px 120px;
+     font-size: 20px;
+     text-align: center;
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     margin: 20px;
+}
+
+.col-2 button{
+     padding: 10px 20px;
+     border-radius: 35px;
+     border: 2px solid #fff;
+     background: transparent;
+     font-size: 18px;
+     color: #fff;
+     /*transform: translate(160px, 30px);*/
+     cursor: pointer;
+     margin: 0 30%;
+}
+
+.col-3 h2{
+     font-size: 25pt;
+     font-weight: 300;
+}
+
+.col-3 p{
+     font-size: 15pt;
+     font-weight: 200;
+}
+
+.col-3 li{
+     list-style: none;
+     font-size: 30px;
+     display: inline-flex;
+     justify-content: space-evenly;
+     align-items: center;
+     cursor: pointer;
+}
+
+/*Media Query for Smartphones*/
+@media only screen and (min-width: 320px) and (max-width: 480px){
+     #header{
+          width: 100%;
+          flex-direction: column;
+          height: 125vh;
+          margin-bottom: 10px;
+     }
+
+     .navbar{
+          width: 100vw;
+          background: #000;
+          margin-bottom: 35px;
+          padding: 10px 10%;
+     }
+
+     .logo{
+          width: 120px;
+          margin-left: -35px;
+     }
+
+     .logo img{
+          width: 100%;
+     }
+
+     .hamburger-menu{
+          display: block;
+     }
+
+     .nav-menu{
+          position: fixed;
+          display: flex;
+          background: #000;
+          flex-direction: column;
+          left: -100%;
+          top: 7%;
+          width: 100vw;
+          height: 500px;
+          align-items: center;
+          justify-content: center;
+          transition: all .3s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(2){
+          opacity: 0;
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .6s ease;
+     }
+
+     .list-items{
+          margin: 20px;
+     }
+
+     .nav-menu.active{
+          left: 0;
+     }
+
+     .nav-links{
+          color: #fff;
+          font-size: 23px;         
+     }
+
+     .nav-links:hover{
+          color: #3f51b4;
+     }
+
+     .menu-btn{
+          display: block;
+          color: #fff;
+          font-size: 35px;
+          margin-right: -25px;
+     }
+
+     .categories{
+          font-size: 30px;
+          font-weight: 400;
+     }
+
+     .product-details small{
+          font-size: 25px;
+     }
+
+     .product-details h2{
+          font-size: 28px;
+     }
+
+     .product-details label{
+          font-size: 30px;
+     }
+
+     #size{
+          font-size: 30px;
+     }
+
+     #number{
+          font-size: 30px;
+     }
+
+     .product-details button{
+          width: 100%;
+          font-size: 25px;
+     }
+
+     .product-details p{
+          font-size: 23px;
+     }
+
+     .product{
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+     }
+
+     .product-details img{
+          width: 100%;
+          height: 100px;
+          margin-top: 15px;
+     }
+
+     .product-details{
+          width: 100%;
+          padding: 10px 20px;
+     }
+
+     .related-products{
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .related-products-details{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+          align-items: center;
+     }
+
+     .clothings-box{
+          width: 45%;
+          height: 500px;
+          margin: 10px 10px;
+     }
+
+     .shoes-box{
+          width: 47%;
+          height: 400px;
+          margin: 10px 5px;
+     }
+
+     .watches-box{
+          width: 47%;
+          height: 500px;
+          margin: 10px 5px;
+     }
+     
+     .clothings-box p{
+          font-size: 23px;
+          font-weight: 400;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .shoes-box p{
+          font-size: 23px;
+          font-weight: 450;
+          padding-left: 5px;
+     }
+
+     .watches-box p{
+          font-size: 23px;
+          font-weight: 400;
+          padding-left: 5px;
+     }
+
+     .clothings-box small{
+          font-size: 23px;
+          padding-left: 5px;
+          margin-top: -5px;
+     }
+
+     .shoes-box small{
+          font-size: 23px;
+          padding-left: 5px;
+     }
+
+     .watches-box small{
+          font-size: 23px;
+          padding-left: 5px;
+     }
+
+     .clothings-box button{
+          font-size: 23px;
+     }
+     .shoes-box button{
+          font-size: 23px;
+     }
+     .watches-box button{
+          font-size: 23px;
+     }
+
+     .clothings-box img{
+          height: 60%;
+     }
+
+     .shoes-box img{
+          height: 60%;
+     }
+
+     .watches-box img{
+          height: 60%;
+     }
+
+     .rating{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          font-size: 18px;
+          padding-left: 5px;
+          margin-bottom: 5px;
+     }
+
+     #footer{
+          width: 100vw;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .col-1{
+          width: 100%;
+          margin-bottom: 20px;
+          margin-top: -50px;
+          padding: 0;
+     }
+
+     .menu-links{
+          font-size: 20px;
+     }
+
+     .col-2{
+          width: 100vw;
+          padding: 2px;
+          margin: 0;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .col-2 input{
+          width: 96vw;
+          margin-left: 6px;
+     }
+
+     .col-2 button{
+          margin: 0 30%;
+          border-radius: 10px;
+          font-size: 20px;
+     }
+
+     .col-3{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+     }
+
+     .col-3 h2{
+          margin-right: 130px;
+     }
+
+     .icons{
+          display: flex;
+          padding: 10px 50px 10px 0;
+     }
+}
+
+/*Media query for smart phones*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+     #header{
+          width: 100%;
+          flex-direction: column;
+          height: 125vh;
+          margin-bottom: 10px;
+     }
+
+     .navbar{
+          width: 100vw;
+          background: #000;
+          margin-bottom: 35px;
+          padding: 10px 10%;
+     }
+
+     .logo{
+          width: 200px;
+          margin-left: -35px;
+     }
+
+     .logo img{
+          width: 100%;
+     }
+
+     .hamburger-menu{
+          display: block;
+     }
+
+     .nav-menu{
+          position: fixed;
+          display: flex;
+          background: #000;
+          flex-direction: column;
+          left: -100%;
+          top: 7%;
+          width: 100vw;
+          height: 500px;
+          align-items: center;
+          justify-content: center;
+          transition: all .3s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(2){
+          opacity: 0;
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .6s ease;
+     }
+
+     .list-items{
+          margin: 20px;
+     }
+
+     .nav-menu.active{
+          left: 0;
+     }
+
+     .nav-links{
+          color: #fff;
+          font-size: 23px;         
+     }
+
+     .nav-links:hover{
+          color: #3f51b4;
+     }
+
+     .menu-btn{
+          display: block;
+          color: #fff;
+          font-size: 35px;
+          margin-right: -25px;
+     }
+
+     .product{
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+          margin: 0;
+          padding: 50px 0;
+     }
+
+     .product-image{
+          width: 100%;
+          height: 95vh;
+          padding: 0 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .product-image img{
+          width: 100%;
+          height: 750px;
+     }
+
+     .product-details{
+          width: 100%;
+          padding: 10px 20px;
+     }
+
+     .product-details .categories{
+          font-size: 35px;
+          font-weight: 400;
+     }
+
+     .product-details small{
+          font-size: 35px;
+     }
+
+     .product-details h2{
+          font-size: 38px;
+     }
+
+     .product-details label{
+          font-size: 30px;
+     }
+
+     #size{
+          font-size: 30px;
+     }
+
+     #number{
+          font-size: 30px;
+     }
+
+     .product-details button{
+          width: 100%;
+          font-size: 25px;
+     }
+
+     .product-details p{
+          font-size: 23px;
+     }
+
+     .related-products{
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .related-products-details{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+          align-items: center;
+     }
+
+     .clothings-box{
+          width: 47%;
+          height: 600px;
+          margin: 10px 5px;
+     }
+
+     .shoes-box{
+          width: 47%;
+          height: 500px;
+          margin: 10px 5px;
+     }
+
+     .watches-box{
+          width: 47%;
+          height: 500px;
+          margin: 10px 5px;
+     }
+     
+     .clothings-box p{
+          font-size: 25px;
+          font-weight: 400;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .shoes-box p{
+          font-size: 25px;
+          font-weight: 400;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .watches-box p{
+          font-size: 25px;
+          font-weight: 400;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .clothings-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .shoes-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .watches-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .clothings-box button{
+          font-size: 25px;
+          left: 10px;
+          top: 92%;
+     }
+
+     .shoes-box button{
+          font-size: 25px;
+          left: 10px;
+          top: 92%;
+     }
+
+     .watches-box button{
+          font-size: 25px;
+          left: 10px;
+          top: 92%;
+     }
+
+     .clothings-box img{
+          height: 60%;
+     }
+
+     .shoes-box img{
+          height: 65%;
+     }
+
+     .watches-box img{
+          height: 60%;
+     }
+
+     .rating{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          font-size: 30px;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     #footer{
+          width: 100vw;
+          border: 2px solid white;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .col-1{
+          width: 100%;
+          margin-bottom: 20px;
+          margin-top: -50px;
+          padding: 0;
+     }
+
+     .menu-links{
+          font-size: 35px;
+     }
+
+     .col-2{
+          width: 100vw;
+          padding: 0;
+          margin: 0;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .col-2 h2{
+          font-size: 50px;
+     }
+
+     .col-2 p{
+          font-size: 35px;
+     }
+
+     .col-2 input{
+          width: 96vw;
+          font-size: 35px;
+     }
+
+     .col-2 button{
+          position: relative;
+          left: 36%;
+          margin: 0;
+          border-radius: 10px;
+          font-size: 25px;
+
+     }
+
+     .col-3{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+     }
+
+     .col-3 h2{
+          text-align: center;
+          font-size: 50px;
+     }
+
+     .col-3 p{
+          font-size: 35px;
+     }
+
+     .icons{
+          display: flex;
+          padding: 10px 50px 10px 0;
+          font-size: 100px;
+     }
+}
+
+/*Media queryfor smart phones*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+     #header{
+          width: 100%;
+          flex-direction: column;
+          height: 125vh;
+          margin-bottom: 10px;
+     }
+
+     .navbar{
+          width: 100vw;
+          background: #000;
+          margin-bottom: 35px;
+          padding: 10px 10%;
+     }
+
+     .logo{
+          width: 120px;
+          margin-left: -35px;
+     }
+
+     .logo img{
+          width: 100%;
+     }
+
+     .hamburger-menu{
+          display: block;
+     }
+
+     .nav-menu{
+          position: fixed;
+          display: flex;
+          background: #000;
+          flex-direction: column;
+          left: -100%;
+          top: 7%;
+          width: 100vw;
+          height: 500px;
+          align-items: center;
+          justify-content: center;
+          transition: all .3s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(2){
+          opacity: 0;
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.active .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .6s ease;
+     }
+
+     .list-items{
+          margin: 20px;
+     }
+
+     .nav-menu.active{
+          left: 0;
+     }
+
+     .nav-links{
+          color: #fff;
+          font-size: 23px;         
+     }
+
+     .nav-links:hover{
+          color: #3f51b4;
+     }
+
+     .menu-btn{
+          display: block;
+          color: #fff;
+          font-size: 35px;
+          margin-right: -25px;
+     }
+
+     .product{
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+          margin: 0;
+          padding: 50px 0;
+     }
+
+     .product-image{
+          width: 100%;
+          height: 95vh;
+          margin-top: 95px;
+          border: 1px solid saddlebrown;
+          padding: 10px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .product-image img{
+          width: 100%;
+          height: 820px;
+     }
+
+     .product-details{
+          width: 100%;
+          padding: 10px 20px;
+     }
+
+     .product-details .categories{
+          font-size: 35px;
+          font-weight: 400;
+     }
+
+     .product-details small{
+          font-size: 35px;
+     }
+
+     .product-details h2{
+          font-size: 38px;
+     }
+
+     .product-details label{
+          font-size: 35px;
+     }
+
+     #size{
+          font-size: 35px;
+     }
+
+     #number{
+          font-size: 30px;
+     }
+
+     .product-details button{
+          width: 100%;
+          font-size: 28px;
+     }
+
+     .product-details p{
+          font-size: 35px;
+     }
+
+     .related-products{
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .related-products-details{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .title{
+          padding: 5px;
+          font-size: 25px;
+     }
+
+     .clothings-box{
+          width: 47%;
+          height: 550px;
+          margin: 10px 10px;
+     }
+
+     .shoes-box{
+          width: 47%;
+          height: 500px;
+          margin: 10px 5px;
+     }
+
+     .watches-box{
+          width: 47%;
+          height: 550px;
+          margin: 10px 5px;
+     }
+     
+     .clothings-box p{
+          font-size: 25px;
+          font-weight: 400;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .shoes-box p{
+          font-size: 25px;
+          font-weight: 450;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .watches-box p{
+          font-size: 25px;
+          font-weight: 500;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .clothings-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .shoes-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .watches-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .clothings-box button{
+          font-size: 25px;
+          width: 95%;
+          left: 10px;
+     }
+     .shoes-box button{
+          font-size: 25px;
+          width: 95%;
+          left: 10px;
+     }
+     .watches-box button{
+          font-size: 25px;
+          width: 95%;
+          left: 10px;
+     }
+
+     .clothings-box img{
+          height: 60%;
+     }
+
+     .shoes-box img{
+          height: 60%;
+     }
+
+     .watches-box img{
+          height: 60%;
+     }
+
+     .rating{
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     #footer{
+          width: 100vw;
+          border: 2px solid white;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .col-1{
+          width: 100%;
+          margin-bottom: 20px;
+          margin-top: -50px;
+          padding: 0;
+     }
+
+     .menu-links{
+          font-size: 30px;
+     }
+
+     .col-2{
+          width: 100vw;
+          padding: 2px;
+          margin: 0;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .col-2 h2{
+          font-size: 50px;
+     }
+
+     .col-2 p{
+          font-size: 30px;
+     }
+
+     .col-2 input{
+          width: 96vw;
+          font-size: 25px;
+     }
+
+     .col-2 button{
+          margin: 0 35%;
+          border-radius: 10px;
+          font-size: 30px;
+     }
+
+     .col-3{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+     }
+
+     .col-3 h2{
+          font-size: 50px;
+     }
+
+     .col-3 p{
+          font-size: 35px;
+     }
+
+     .icons{
+          display: flex;
+          padding: 10px 50px 10px 0;
+          font-size: 30px;
+     }
+}

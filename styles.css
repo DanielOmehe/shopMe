@@ -1,0 +1,132 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header{
+     width: 100vw;
+}
+
+.navbar{
+     padding: 25px 60px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     background: black;
+     color: #fff;
+}
+
+.submenu{
+     z-index: 0;
+     /*top: -100%;*/
+     position: absolute;
+     background: black;
+     margin: 0 10px;
+     display: none;
+}
+
+.submenu.open{
+     display: block;
+}
+
+.list-item{
+     margin: 2px;
+     padding: 10px 20px;
+     list-style: none;
+}
+
+.menu-link{
+     color: #fff;
+     text-decoration: none;
+     font-size: 18px;
+}
+
+.logo{
+     margin: 0 40px;
+     font-size: 25px;
+}
+
+.nav-menu{
+     display: flex;
+     align-items: center;
+     padding: 0 10px;
+}
+
+.icons{
+     margin: 0;
+     font-size: 33px;
+     display: none;
+     cursor: pointer;
+}
+
+.list-items{
+     list-style: none;
+     margin: 0 40px;
+}
+
+.nav-links{
+     text-decoration: none;
+     color: #fff;
+     font-size: 18px;
+     border: none;
+}
+
+.nav-links:hover{
+     color: #3f51b5;
+     border-bottom: 3px solid #3f51b5;
+     border-bottom-width: 100%;
+     transition: all .5s ease;
+}
+
+@media only screen and (max-width: 800px){
+     #header{
+          width: 100vw;
+     }
+
+     .navbar{
+          width: 100%;
+          margin: 0;
+          padding: 20px 0;
+     }
+
+     .logo{
+          margin-left: 10px;
+     }
+
+     .nav-menu{
+          position: fixed;
+          flex-direction: column;
+          top: 10px;
+          left: -100%;
+          padding: 15px 45px;
+          background: black;
+          width: 100%;
+          transition: all .6s ease;
+     }
+
+     .nav-menu.open{
+          left: 0;
+     }
+
+     .list-items{
+          margin: 30px 0;
+     }
+
+     .nav-links{
+          font-size: 23px;
+     }
+
+     .icons{
+          display: block;
+          margin-right: 10px;
+     }
+
+     #cancel-btn{
+          position: absolute;
+          top: 5px;
+          left: 90%;
+     }
+}

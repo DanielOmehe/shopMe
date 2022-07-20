@@ -1,0 +1,2015 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header{
+     width: 100vw;
+     height: 100vh;
+     padding: 0 10%;
+     background: linear-gradient(to bottom, #f7efef, #fff);
+}
+
+.navbar{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     z-index: 2;
+     position: relative;
+     padding-left: -20px;
+     padding-right: -20px;
+}
+
+.list-item{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 30px;
+     font-size: 25px;
+}
+
+.nav-links{
+     text-decoration: none;
+     color: #3f51b5;
+     font-size: 20px;
+     padding: 0 5px;
+     border: none;
+}
+
+.nav-links:hover{
+     border-bottom: 2px solid rgba(0, 0, 255, .42);
+     transition: all .2s ease-in;
+}
+
+.hamburger-menu{
+     display: none;
+}
+
+.bar{
+     display: flex;
+     margin: 10px;
+     width: 50px;
+     height: 6px;
+     border-radius: 5px;
+     background: #000;
+}
+
+.text-box{
+     margin-top: 130px;
+     max-width: 600px;
+}
+
+.text-box h1{
+     font-size: 45px;
+     margin-bottom: 20px;
+     color: #3f51b5;
+     animation: change 10s infinite;
+}
+
+.text-box a{
+     display: inline-block;
+     text-decoration: none;
+     border-radius: 5px;
+     font-size: 18px;
+     background: #3f51b5;
+     padding: 10px 30px;
+     color: #fff;
+     margin-top: 50px;
+}
+
+.user-box{
+     position: absolute;
+     top: 0;
+     right: 12%;
+     background: #d9e0ff;
+     z-index: 1;
+}
+
+.user-box img{
+     display: block;
+     padding-top: 100px;
+     width: 410px;
+     margin-bottom: -205px;
+}
+
+#product-container{
+     width: 100vw;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.product-banner-container{
+     width: 100vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px 40px;
+}
+
+.advert-banner:nth-child(1){
+     width: 28%;
+     height: 30vh;
+     background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/printed-t-shirt-with-shorts-for-kid-boy-e1597743722833.jpg') no-repeat;
+     background-size: cover;
+     background-position: top;
+     transition: all .9s;
+     margin-right: 12px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     animation: changeBackground 20s infinite;
+}
+
+.advert-banner:nth-child(2){
+     width: 28%;
+     height: 30vh;
+     background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/black-and-white-nike-huarache.jpg') no-repeat;
+     background-size: cover;
+     background-position: right;
+     transition: all .9s;
+     margin-right: 12px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     animation: animateBackground 10s infinite;
+}
+
+.advert-banner:nth-child(3){
+     width: 28%;
+     height: 30vh;
+     background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/Daniel-wellington-leater-strap-watch.jpg') no-repeat;
+     background-size: cover;
+     background-position: right;
+     transition: all .9s;
+     margin-right: 12px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    animation: changingBackground 20s infinite;
+}
+
+@keyframes changeBackground {
+     0%, 100%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/printed-t-shirt-with-shorts-for-kid-boy-e1597743722833.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+     25%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/nirvana-kurt-cobain.jpeg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+     50%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/tik-tracksuit.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+}
+
+@keyframes animateBackground {
+     0%, 100%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/black-and-white-nike-huarache.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+     25%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/nike-vaporMax-flyKnit2.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+     50%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/nike-jordan-true-flight.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+}
+
+@keyframes changingBackground {
+     0%, 100%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/Daniel-wellington-leater-strap-watch.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+     25%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/cool-smart-watch.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+     50%{
+          background: linear-gradient(rgba(0,0,0,.12), rgba(0,0,0,.13)), url('images/omege-seamaster.jpg') no-repeat;
+          background-size: cover;
+          transition: all .9s;
+          background-position: top;
+     }
+}
+
+.text{
+     font-size: 28px;
+     font-weight: 500;
+     color: #fff;
+     color: #fff;
+}
+
+.offer{
+     font-size: 25px;
+     color: #fff;
+     animation: font 10s infinite;
+}
+
+.orderButton{
+     font-size: 25px;
+     background: transparent;
+     color: #fff;
+     padding: 10px 30px;
+     border-radius: 10px;
+     border: 2px solid white;
+     background-color: #3f51b5;
+     animation: backgroundWidth 10s infinite;
+}
+
+@keyframes backgroundWidth {
+     0%, 100%{
+          background-color: transparent;
+     }
+     50%{
+          background: lightblue;
+     }
+     80%{
+          background: lightskyblue;
+     }
+}
+
+#offer{
+     width: 100%;
+     padding: 0 45px;
+     display: block;
+     animation: animate 10s infinite;
+     border-top: 1px solid blue solid white;
+     border-top-width: 0;
+}
+
+
+
+@keyframes animate {
+     0%,100%{
+          transform: translate(0, 0);
+     }
+
+     50%{
+          transform: translate(-20px, -20px);
+     }
+     
+}
+
+.title{
+     height: 35px;
+     text-align: center;
+     background: rgba(0, 0, 255, .42);
+     box-shadow: 0 0 3px rgba(0,0,0,.13);
+}
+
+.title h1{
+     font-size: 20px;
+     font-weight: 400;
+     color: #fff;
+}
+
+.product-brands-container{
+     width: 90%;
+     margin: 5px auto;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     box-shadow: 0 0 10px rgba(0,0,0,.03);
+}
+
+.product-brands{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     background-color: #fff;
+     margin: 0 auto;
+}
+
+.product{
+     width: 250px;
+     margin: 5px;
+     height: 100px;
+     border-radius: 5px;
+}
+
+.product:nth-child(1){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/nike-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(2){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/adidas-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(3){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/reebok-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(4){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/new-balance-backgroud.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(5){
+     background: linear-gradient(to bottom, rgba(0,0,0,.03), rgba(0,0,0,.03)), url('images/balenciaga-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(6){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/vans-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(7){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/gucci-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(8){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/puma-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(9){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/givenchy-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product:nth-child(10){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/burberry-background.jpeg_1') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+.product:hover{
+     width: 202px;
+     box-shadow: 0 0 10px rgba(0,0,0,1);
+     transition: all .6s ease;
+}
+
+.product-box{
+     width: 90%;
+     margin: 10px auto;
+}
+.women-product-box{
+     width: 90%;
+     margin: 10px auto;
+}
+.kids-product-box{
+     width: 90%;
+     margin: 10px auto;
+}
+
+.product-category-mens-clothing{
+     width: 100%;
+     margin: 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 5px;
+}
+
+.product-category-mens-shoes{
+     width: 100%;
+     margin: 15px 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 5px;
+}
+
+.product-category-mens-watches{
+     width: 100%;    
+     margin: 15px 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 5px;
+}
+
+.product-category-womens-clothing{
+     width: 100%;
+     margin: 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 5px;
+}
+
+.product-category-womens-shoes{
+     width: 100%;
+     margin: 15px 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 5px;
+}
+
+.product-category-womens-watches{
+     width: 100%;
+     margin: 15px 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 10px;
+}
+
+.product-category-kids-clothing{
+     width: 100%;
+     margin: 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 10px;
+}
+
+.product-category-kids-shoes{
+     width: 100%;
+     margin: 15px 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 10px;
+}
+
+.product-category-kids-watches{
+     width: 100%;
+     margin: 15px 0;
+     box-shadow: 0 0 12px rgba(0,0,0,.03);
+     border-radius: 10px;
+}
+
+.clothings-box-container{
+     width: 100%;
+     padding: 5px;
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+}
+
+.watches-box-container{
+     width: 100%;
+     padding: 5px;
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.shoes-box-container{
+     width: 100%;
+     padding: 5px;
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.clothings-box{
+     width: 20%;
+     height: 400px;
+     margin: 30px 20px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 3px;
+     position: relative;
+     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     overflow: hidden;
+}
+
+.shoes-box{
+     width: 20%;
+     height: 400px;
+     margin: 30px 20px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 3px;
+     position: relative;
+     box-shadow: 0 5px 15px  0 rgba(0,0,0,.25);
+     overflow: hidden;
+} 
+
+.watches-box{
+     width: 20%;
+     height: 400px;
+     margin: 30px 20px;
+     display: flex;
+     flex-direction: column;
+     border-radius: 3px;
+     position: relative;
+     box-shadow: 0 5px 15px  0 rgba(0,0,0,.25);
+     overflow: hidden;
+}
+
+.clothings-box button{
+     position: absolute;
+     left: 10px;
+     top: 90%;
+     font-size: 18px;
+     width: 95%;
+     padding: 5px 0;
+     background: #3f51b5;
+     border: 1px solid #3f51b5;
+     color: #fff;
+     cursor: pointer;
+}
+
+.shoes-box button{
+     position: absolute;
+     left: 10px;
+     top: 90%;
+     font-size: 18px;
+     width: 95%;
+     padding: 5px 0;
+     background: #3f51b5;
+     border: 1px solid #3f51b5;
+     color: #fff;
+     cursor: pointer;
+}
+
+.watches-box button{
+     position: absolute;
+     left: 10px;
+     top: 90%;
+     font-size: 18px;
+     width: 95%;
+     padding: 5px 0;
+     background: #3f51b5;
+     border: 1px solid #3f51b5;
+     color: #fff;
+     cursor: pointer;
+}
+
+.rating{
+     font-size: 18px;
+     padding-left: 5px;
+     color: orange;
+}
+
+.clothings-box img{
+     width: 100%;
+     height: 60%;
+}
+.shoes-box img{
+     width: 100%;
+     height: 60%;
+}
+.watches-box img{
+     width: 100%;
+     height: 60%;
+}
+
+.clothings-box p{
+     font-size: 18px;
+}
+
+.shoes-box p{
+     font-size: 18px;
+}
+
+.watches-box p{
+     font-size: 18px;
+}
+
+.clothings-box small{
+     font-size: 18px;
+     padding-left: 5px;
+     margin-bottom: -10px;
+}
+
+.shoes-box small{
+     font-size: 18px;
+     padding-left: 5px;
+     margin-bottom: -10px;
+}
+
+.watches-box small{
+     font-size: 18px;
+     padding-left: 5px;
+     margin-bottom: -10px;
+}
+
+.clothings-box:hover{
+     transform: translateY(-10px);
+     transition: all .6s ease;
+}
+
+.shoes-box:hover{
+     transform: translateY(-10px);
+     transition: all .6s ease;
+}
+
+.watches-box:hover{
+     transform: translateY(-10px);
+     transition: all .6s ease;
+}
+
+.mens-brands-container{
+     width: 90%;
+     margin: 5px auto;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0,0,0,.03);
+}
+
+.mens-product-brands{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     background: #fff;
+}
+
+.product-men{
+     background: #333;
+     color: #fff;
+     width: 250px;
+     margin: 5px;
+     height: 100px;
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.product-men:nth-child(1){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/nike-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(2){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/adidas-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(3){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/reebok-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(4){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/new-balance-backgroud.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(5){
+     background: linear-gradient(to bottom, rgba(0,0,0,.03), rgba(0,0,0,.03)), url('images/balenciaga-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(6){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/vans-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(7){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/gucci-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(8){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/puma-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(9){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/givenchy-background.jpg') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.product-men:nth-child(10){
+     background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0.3)), url('images/burberry-background.jpeg_1') no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+#footer{
+     width: 100%;
+     margin-bottom: 0;
+     color: #fff;
+     display: flex;
+     justify-content: space-around;
+     background: #333;
+     padding: 50px 10%;
+     margin: 0;
+     align-items: center;
+}
+
+.menu-links{
+     display: block;
+     text-decoration: none;
+     font-size: 25px;
+     font-weight: 300;
+     color: #f7efef;
+     text-align: left;
+     margin: 0;
+}
+
+.col-1 > a:hover{
+     color: #3f51b5;
+}
+
+.col-2{
+     text-align: center;
+}
+
+.col-2 h2{
+     font-size: 35px;
+     font-weight: 300;
+     margin-bottom: 20px;
+}
+
+.col-2 p{
+     font-size: 20px;
+     margin-bottom: 30px;
+}
+
+.col-2 input{
+     padding: 20px 25%;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     text-align: center;
+     font-size: 18px;
+     color: #111;
+}
+
+.col-2 button{
+     padding: 15px 35px;
+     background: transparent;
+     border: 2px solid #fff;
+     cursor: pointer;
+     margin-top: 30px;
+     color: #fff;
+     font-size: 18px;
+     border-radius: 35px;
+     align-items: center;
+}
+
+.col-3{
+     text-align: center;
+}
+
+.col-3 h2{
+     font-weight: 400;
+     margin-bottom: 30px;
+}
+
+.col-3 p{
+     line-height: 30px;
+     margin-bottom: 30px;
+}
+
+.col-3 a{
+     font-size: 30px;
+     color: #fff;
+     list-style: none;
+     display: inline-flex;
+     justify-content: space-around;
+     align-items: center;
+     cursor: pointer;
+}
+
+a{
+     padding: 2px;
+}
+
+
+/*Media Query For Smartphones*/
+@media only screen and (min-width: 320px) and (max-width: 479px){
+     #header{
+          width: 100vw;
+          height: 110vh;
+          margin-bottom: 10px;
+          padding: 0;
+     }
+
+     #navbar{
+          width: 100vw;
+          padding: 0 20px;
+     }
+
+     .logo{
+          width: 100px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+     }
+
+     .logo img{
+          width: 100%;
+          height: 50%;
+     }
+
+     .hamburger-menu.open .bar:nth-child(2){
+          opacity: 0;
+          transition: all .5s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .5s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .5s ease;
+     }
+
+     .nav-menu{
+          width: 100vw;
+          position: fixed;
+          top: 0%;
+          left: -100%;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: all .8s ease;
+          padding: 20px;
+     }
+
+     .nav-menu.open{
+          left: 0;
+     }
+
+     .list-items{
+          padding: 20px 10px;
+          font-size: 24px;
+     }
+
+     .nav-links{
+          color: #000;
+     }
+
+     .hamburger-menu{
+          display: block;
+     }
+     
+     .user-content{
+          width: 100vw;
+          height: 100vh;
+          flex-direction: column;
+          position: relative;
+          padding: 0;
+     }
+
+     .text-box{
+          margin-top: -5px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 20px;
+     }
+
+     .text-box h1{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .text-box p{
+          font-size: 20px;
+          letter-spacing: 0;
+          word-spacing: 0;
+          padding-left: 5px;
+     }
+
+     .text-box a{
+          font-size: 20px;
+     }
+
+     .user-box{
+          width: 100%;
+          background: none;
+          left: 0;
+          top: 50%;
+     }
+
+     .user-box img{
+          width: 90%;
+          margin: -180px auto 180px;
+     }
+
+     #product-container{
+          width: 100vw;
+          flex-direction: column;
+          /*padding: 0 5px;*/
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-banner-container{
+          padding: 0;
+          margin: 0;
+          flex-direction: column;
+     }
+
+     .advert-banner{
+          width: 90vw;
+          margin: 10px 0;
+     }
+
+     .advert-banner:nth-child(1){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .advert-banner:nth-child(2){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .advert-banner:nth-child(3){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .product-brands-container{
+          width: 100vw;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-brands{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product{
+          width: 60px;
+          height: 50px;
+          margin: 5px 5px;
+     }
+
+     .product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .women-product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .kids-product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .product-category-mens-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-mens-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-mens-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+     
+     .clothings-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .shoes-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .watches-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .clothings-box{
+          width: 47%;
+          margin: 10px 5px;
+     }
+
+     .shoes-box{
+          width: 47%;
+          margin: 10px 5px;
+     }
+
+     .watches-box{
+          width: 47%;
+          margin: 10px 5px;
+     }
+
+     .mens-brands-container{
+          width: 100vw;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .mens-product-brands{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-men{
+          width: 60px;
+          height: 50px;
+          margin: 5px 5px;
+     }
+
+     #footer{
+          flex-direction: column;
+     }
+
+     .col-1{
+          padding: 0 50px;
+     }
+
+     .menu-links{
+          margin: 0;
+     }
+
+     .col-2{
+          width: 100vw;
+          padding: 0 10px;
+          margin: 10px 0;
+     }
+
+     .col-2 input{
+          width: 93%;
+     }
+
+     .col-2 h2{
+          font-size: 30px;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+     }
+
+     .col-2 p{
+          font-size: 20px;
+          text-align: left;
+          padding-left: 30px;
+     }
+
+     .col-3{
+          width: 100%;
+     }
+
+     .col-3 h2{
+          font-size: 35px;
+          margin-bottom: -6px;
+     }
+
+     .col-3 p{
+          font-size: 20px;
+          text-align: justify;
+          margin-left: 60px;
+          margin-bottom: -1px;
+     }
+
+     .col-3 a{
+          padding: 2px;
+     }
+}
+
+/*Media Query For Tablets*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+     #header{
+          width: 100vw;
+          height: 110vh;
+          margin-bottom: 10px;
+          padding: 0;
+     }
+
+     #navbar{
+          width: 100vw;
+          padding: 0 20px;
+     }
+
+     .logo{
+          width: 100px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+     }
+
+     .logo img{
+          width: 100%;
+          height: 50%;
+     }
+
+     .hamburger-menu.open .bar:nth-child(2){
+          opacity: 0;
+          transition: all .5s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .5s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .5s ease;
+     }
+
+     .nav-menu{
+          width: 100vw;
+          position: fixed;
+          top: 0%;
+          left: -100%;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: all .8s ease;
+          padding: 20px;
+     }
+
+     .nav-menu.open{
+          left: 0;
+     }
+
+     .list-items{
+          padding: 20px 10px;
+          font-size: 24px;
+     }
+
+     .nav-links{
+          color: #000;
+     }
+
+     .hamburger-menu{
+          display: block;
+     }
+     
+     .user-content{
+          width: 100vw;
+          height: 100vh;
+          flex-direction: column;
+          position: relative;
+          padding: 0;
+     }
+
+     .text-box{
+          margin-top: -5px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 20px;
+     }
+
+     .text-box h1{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .text-box p{
+          font-size: 20px;
+          letter-spacing: 0;
+          word-spacing: 0;
+          padding-left: 5px;
+     }
+
+     .text-box a{
+          font-size: 20px;
+     }
+
+     .user-box{
+          width: 100%;
+          background: none;
+          left: 0;
+          top: 50%;
+     }
+
+     .user-box img{
+          width: 90%;
+          margin: -180px auto 180px;
+     }
+
+     #product-container{
+          width: 100vw;
+          flex-direction: column;
+          /*padding: 0 5px;*/
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-banner-container{
+          padding: 0;
+          margin: 0;
+          flex-direction: column;
+     }
+
+     .advert-banner{
+          width: 90vw;
+          margin: 10px 0;
+     }
+
+     .advert-banner:nth-child(1){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .advert-banner:nth-child(2){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .advert-banner:nth-child(3){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .product-brands-container{
+          width: 100vw;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-brands{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product{
+          width: 60px;
+          height: 50px;
+          margin: 5px 5px;
+     }
+
+     .product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .women-product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .kids-product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .product-category-mens-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-mens-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-mens-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+     
+     .clothings-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .shoes-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .watches-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .clothings-box{
+          width: 47%;
+          height: 550px;
+          margin: 10px 5px;
+     }
+
+     .clothings-box p{
+          font-size: 20px;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .clothings-box small{
+          font-size: 20px;
+          padding-left: 5px;
+     }
+
+     .clothings-box img{
+          height: 65%;
+     }
+
+     .clothings-box button{
+          top: 92%;
+     }
+
+     .shoes-box{
+          width: 47%;
+          height: 500px;
+          margin: 10px 5px;
+     }
+
+     .shoes-box p{
+          font-size: 20px;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .shoes-box small{
+          font-size: 20px;
+          padding-left: 5px;
+     }
+
+     .shoes-box img{
+          height: 65%;
+     }
+
+     .shoes-box button{
+          top: 91%;
+     }
+
+     .watches-box{
+          width: 47%;
+          height: 500px;
+          margin: 10px 5px;
+     }
+
+     .watches-box p{
+          font-size: 20px;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .watches-box small{
+          font-size: 20px;
+          padding-left: 5px;
+     }
+
+     .watches-box img{
+          height: 65%;
+     }
+
+     .watches-box button{
+          top: 91%;
+     }
+
+     .rating{
+          font-size: 25px;
+          padding-bottom: -15px;
+     }
+
+     .mens-brands-container{
+          width: 100vw;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .mens-product-brands{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-men{
+          width: 60px;
+          height: 50px;
+          margin: 5px 5px;
+     }
+
+     #footer{
+          flex-direction: column;
+     }
+
+     .col-1{
+          padding: 0 50px;
+     }
+
+     .menu-links{
+          margin: 0;
+     }
+
+     .col-2{
+          width: 100vw;
+          padding: 0 10px;
+          margin: 10px 0;
+     }
+
+     .col-2 h2{
+          font-size: 30px;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+     }
+
+     .col-2 p{
+          font-size: 20px;
+          text-align: left;
+          padding-left: 30px;
+     }
+
+     .col-3{
+          width: 100%;
+     }
+
+     .col-3 h2{
+          font-size: 35px;
+          margin-bottom: -6px;
+     }
+
+     .col-3 p{
+          font-size: 20px;
+          text-align: justify;
+          margin-left: 60px;
+          margin-bottom: -1px;
+     }
+
+     .col-3 a{
+          padding: 2px;
+     }
+}
+
+/*Media Query For Ipads*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+     #header{
+          width: 100vw;
+          height: 170vh;
+          margin-bottom: 10px;
+          padding: 0;
+     }
+
+     #navbar{
+          width: 100vw;
+          padding: 0 10px;
+     }
+
+     .logo{
+          width: 200px;
+          height: 180px;
+          margin-top: -30px;
+          padding: 0;
+          display: flex;
+          align-items: center;
+     }
+
+     .logo img{
+          width: 100%;
+          height: 50%;
+     }
+
+     .hamburger-menu.open .bar:nth-child(2){
+          opacity: 0;
+          transition: all .5s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .5s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .5s ease;
+     }
+
+     .nav-menu{
+          width: 100vw;
+          position: fixed;
+          top: 0%;
+          left: -100%;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: all .8s ease;
+          padding: 20px;
+     }
+
+     .nav-menu.open{
+          left: 0;
+     }
+
+     .list-items{
+          padding: 20px 10px;
+          font-size: 24px;
+     }
+
+     .nav-links{
+          color: #000;
+          font-size: 28px;
+     }
+
+     .hamburger-menu{
+          display: block;
+          margin-top: -20px;
+     }
+     
+     .user-content{
+          width: 100vw;
+          height: 100vh;
+          flex-direction: column;
+          padding: 0;
+     }
+
+     .text-box{
+          width: 100%;
+          margin: 0 auto;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+     }
+
+     .text-box h1{
+          font-size: 45px;
+          padding-left: 5px;
+     }
+
+     .text-box p{
+          font-size: 30px;
+          letter-spacing: 0;
+          word-spacing: 0;
+          padding-left: 5px;
+     }
+
+     .text-box a{
+          font-size: 30px;
+     }
+
+     .user-box{
+          width: 100%;
+          background: none;
+          left: 0;
+          top: 70%;
+     }
+
+     .user-box img{
+          width: 80%;
+          margin: -150px auto 180px;
+     }
+
+     #product-container{
+          width: 100vw;
+          flex-direction: column;
+          /*padding: 0 5px;*/
+          margin: 0;
+          padding: 0;
+     }
+
+     .title{
+          height: 40px;
+          margin: 0;
+     }
+
+     .title h1{
+          font-size: 25px;
+     }
+
+     .product-banner-container{
+          padding: 0;
+          margin: 0;
+          flex-direction: column;
+     }
+
+     .advert-banner{
+          width: 90vw;
+          margin: 10px 0;
+     }
+
+     .advert-banner h2{
+          font-size: 50px;
+     }
+
+     .advert-banner p{
+          font-size: 25px;
+     }
+
+     .advert-banner:nth-child(1){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .advert-banner:nth-child(2){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .advert-banner:nth-child(3){
+          width: 90%;
+          margin: 10px 0;
+          padding: 0;
+          height: 400px;
+     }
+
+     .product-brands-container{
+          width: 100vw;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-brands{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product{
+          width: 160px;
+          height: 100px;
+          margin: 10px 10px;
+     }
+
+     .product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .women-product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .kids-product-box{
+          width: 100%;
+          padding: 0;
+          margin-top: 10px;
+     }
+
+     .product-category-mens-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-mens-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-mens-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-womens-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-clothing{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-shoes{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-category-kids-watches{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+     }
+     
+     .clothings-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .shoes-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .watches-box-container{
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+
+     .clothings-box{
+          width: 47%;
+          height: 650px;
+          margin: 10px 5px;
+     }
+
+     .clothings-box p{
+          font-size: 25px;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .clothings-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .clothings-box img{
+          height: 65%;
+     }
+
+     .clothings-box button{
+          top: 91%;
+          font-size: 25px;
+     }
+
+     .shoes-box{
+          width: 47%;
+          height: 650px;
+          margin: 10px 5px;
+     }
+
+     .shoes-box p{
+          font-size: 25px;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .shoes-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .shoes-box img{
+          height: 65%;
+     }
+
+     .shoes-box button{
+          top: 91%;
+          font-size: 25px;
+     }
+
+     .watches-box{
+          width: 47%;
+          height: 650px;
+          margin: 10px 5px;
+     }
+
+     .watches-box p{
+          font-size: 25px;
+          padding-left: 5px;
+          padding-bottom: 5px;
+     }
+
+     .watches-box small{
+          font-size: 25px;
+          padding-left: 5px;
+     }
+
+     .watches-box img{
+          height: 65%;
+     }
+
+     .watches-box button{
+          top: 91%;
+          font-size: 25px;
+     }
+
+     .rating{
+          font-size: 35px;
+          padding-bottom: -15px;
+     }
+
+     .mens-brands-container{
+          width: 100vw;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .mens-product-brands{
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+     }
+
+     .product-men{
+          width: 60px;
+          height: 50px;
+          margin: 5px 5px;
+     }
+
+     #footer{
+          flex-direction: column;
+     }
+
+     .col-1{
+          padding: 0 50px;
+     }
+
+     .menu-links{
+          margin: 0;
+     }
+
+     .col-2{
+          width: 100vw;
+          padding: 0 10px;
+          margin: 10px 0;
+     }
+
+     .col-2 h2{
+          font-size: 30px;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+     }
+
+     .col-2 p{
+          font-size: 20px;
+          text-align: left;
+          padding-left: 30px;
+     }
+
+     .col-3{
+          width: 100%;
+     }
+
+     .col-3 h2{
+          font-size: 35px;
+          margin-bottom: -6px;
+     }
+
+     .col-3 p{
+          font-size: 20px;
+          text-align: justify;
+          margin-left: 60px;
+          margin-bottom: -1px;
+     }
+
+     .col-3 a{
+          padding: 2px;
+     }
+}
