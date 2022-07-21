@@ -166,12 +166,13 @@
 .clothings-box{
      width: 20%;
      height: 400px;
+     position: relative;
      margin: 10px 5px;
      display: flex;
+     box-shadow: 0 0 2px rgba(0,0,0,.45);
      flex-direction: column;
      border-radius: 3px;
-     position: relative;
-     box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+     text-align: center;
      overflow: hidden;
 }
 
@@ -192,14 +193,13 @@
 
 .rating{
      color: orange;
-     margin-bottom: -20px;
      padding-left: 3px;
 }
 
 .clothings-box button{
      position: absolute;
      left: 2.5%;
-     top: 88%;
+     top: 90%;
      width: 95%;
      padding: 10px 20px;
      border: 1px solid rgba(255, 255, 255, .95);
@@ -237,9 +237,10 @@
      margin: 10px 5px;
      display: flex;
      flex-direction: column;
-     border-radius: 3px;
      position: relative;
-     box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+     border-radius: 5px;
+     text-align: center;
+     box-shadow: 0 0 2px rgba(0,0,0,.45);
      overflow: hidden;
 }
 
@@ -260,7 +261,7 @@
 
 .shoes-box button{
      position: absolute;
-     left: 2.5%;
+     left: 10px;
      top: 88%;
      width: 95%;
      padding: 10px 20px;
@@ -297,11 +298,12 @@
      height: 400px;
      margin: 10px 5px;
      display: flex;
+     position: relative;
      flex-direction: column;
      border-radius: 3px;
-     position: relative;
-     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     text-align: center;
      overflow: hidden;
+     box-shadow: 0 0 2px rgba(0,0,0,.45);
 }
 
 .watches-box img{
@@ -359,7 +361,7 @@
      margin: 10px 30px;
 }
 
-.col-1 a{
+.menu-links{
      text-decoration: none;
      font-size: 20px;
      color: #fff;
@@ -432,6 +434,7 @@
      display: inline;
      cursor: pointer;
 }
+
 /*Media Query For Smartphones*/
 @media only screen and (min-width: 320px) and (max-width: 480px){
      #header{
@@ -456,6 +459,7 @@
 
      body{
           width: 100vw;
+          background: rgba(76, 118, 235, 0.05);
      }
 
      .logo{
@@ -471,16 +475,19 @@
           height: 50%;
      }
 
-     .hamburger-menu.active .bar:nth-child(2){
+     .hamburger-menu.open .bar:nth-child(2){
           opacity: 0;
+          transition: all .5s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(1){
+     .hamburger-menu.open .bar:nth-child(1){
           transform: translateY(8px) rotate(45deg);
+          transition: all .5s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(3){
+     .hamburger-menu.open .bar:nth-child(3){
           transform: translateY(-24px) rotate(-45deg);
+          transition: all .5s ease;
      }
 
      .nav-menu{
@@ -496,13 +503,15 @@
           transition: all .7s ease;
      }
 
-     .nav-menu.active{
+     .nav-menu.open{
           left: 0;
      }
 
+
      .list-items{
-          padding: 20px 10px;
+          padding: 10px 10px;
           font-size: 24px;
+          margin: 10px;
      }
 
      .nav-links{
@@ -583,14 +592,15 @@
           flex-wrap: wrap;
           margin: 0;
           padding: 0;
-          justify-content: space-around;
      }
 
      .clothings-box{
-          width: 45%;
-          height: 300px;
+          width: 46%;
+          background: #fff;
+          height: 400px;
           margin-top: 10px;
           display: flex;
+          align-items: center;
           flex-direction: column;
      }
 
@@ -614,15 +624,15 @@
 
      .clothings-box img{
           width: 100%;
-          height: 40%;
+          height: 60%;
      }
 
      .clothings-box button{
           font-size: 18px;
-          padding: 10px;
+          padding: 5px;
           position: absolute;
-          left: 50px;
-          top: 85%;
+          left: 5px;
+          top: 90%;
      }
 
      .shoes-box-container{
@@ -634,16 +644,17 @@
      }
 
      .shoes-box{
-          width: 45%;
+          width: 46%;
           height: 400px;
-          margin: 10px 10px;
+          margin: 5px;
           display: flex;
+          background: #fff;
           flex-direction: column;
      }
 
      .shoes-box img{
           width: 100%;
-          height: 45%;
+          height: 55%;
      }
 
      .shoes-box p{
@@ -656,13 +667,12 @@
           font-size: 18px;
      }
 
-
      .shoes-box button{
           font-size: 18px;
           padding: 5px;
           position: absolute;
-          left: 22px;
-          top: 85%;
+          left: 5px;
+          top: 90%;
      }
 
      .watches-box-container{
@@ -674,10 +684,11 @@
      }
 
      .watches-box{
-          width: 45%;
+          width: 46%;
           height: 400px;
-          margin: 10px 10px;
+          margin: 5px;
           display: flex;
+          background: #fff;
           flex-direction: column;
      }
 
@@ -700,8 +711,8 @@
           font-size: 16px;
           padding: 5px;
           position: absolute;
-          left: 22px;
-          top: 85%;
+          left: 6px;
+          top: 90%;
      }
 
      #footer{
@@ -719,14 +730,14 @@
           align-items: center;
      }
 
-     .col-1 a{
-          font-size: 25px;
+     .menu-links{
+          font-size: 20px;
      }
 
      .col-2{
-          width: 90%;
-          padding: 0;
-          margin: 0;
+          width: 100%;
+          padding: 0 10px;
+          margin-bottom: 40px;
      }
 
      .col-2 h2{
@@ -737,7 +748,7 @@
 
      .col-2 button{
           padding: 10px 5px;
-          margin: 0  90px;
+          margin: 0 35px;
           font-size: 18px;
           border-radius: 5px;
      }
@@ -745,13 +756,32 @@
      .col-2 input{
           font-size: 25px;
      }
+
+     .col-3{
+          width: 100%;
+          align-items: center;
+     }
+
+     .col-3 h2{
+          font-size: 40px;
+          font-weight: 400;
+     }
+
+     .col-3 p{
+          font-size: 25px;
+          padding-left: 45px;
+     }
+
+     .icons li{
+          font-size: 40px;
+     }
 }
 
 /*Media Query For Tablets*/
 @media only screen and (min-width: 480px) and (max-width: 767px){
      #header{
           width: 100vw;
-          height: 80vh;
+          height: 100vh;
           background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("images/adidas-background.jpg");
           background-repeat: no-repeat;
           background-position: center;
@@ -771,6 +801,7 @@
 
      body{
           width: 100vw;
+          background: rgba(76, 118, 235, 0.05);
      }
 
      .logo{
@@ -786,16 +817,19 @@
           height: 50%;
      }
 
-     .hamburger-menu.active .bar:nth-child(2){
+     .hamburger-menu.open .bar:nth-child(2){
           opacity: 0;
+          transition: all .5s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(1){
+     .hamburger-menu.open .bar:nth-child(1){
           transform: translateY(8px) rotate(45deg);
+          transition: all .5s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(3){
+     .hamburger-menu.open .bar:nth-child(3){
           transform: translateY(-24px) rotate(-45deg);
+          transition: all .5s ease;
      }
 
      .nav-menu{
@@ -811,17 +845,19 @@
           transition: all .7s ease;
      }
 
-     .nav-menu.active{
+     .nav-menu.open{
           left: 0;
      }
 
      .list-items{
           padding: 20px 10px;
           font-size: 24px;
+          margin: 20px;
      }
 
      .nav-links{
           color: #000;
+          font-size: 30px;
      }
 
      .hamburger-menu{
@@ -849,7 +885,7 @@
      }
 
      .text-area p{
-          font-size: 20px;
+          font-size: 25px;
           letter-spacing: 1.5px;
      }
 
@@ -901,10 +937,12 @@
      }
 
      .clothings-box{
-          width: 45%;
+          width: 47%;
           height: 600px;
-          margin: 10px 10px;
+          margin: 10px;
           display: flex;
+          background: #fff;
+          text-align: center;
           flex-direction: column;
      }
 
@@ -917,20 +955,20 @@
      }
 
      .clothings-box small{
-          font-size: 22px;
+          font-size: 25px;
           padding-left: 5px;
      }
 
      .rating{
           width: 100%;
           padding-bottom: 5px;
-          font-size: 20px;
+          font-size: 25px;
           padding-left: 5px;
      }
 
      .clothings-box img{
           width: 100%;
-          height: 70%;
+          height: 60%;
      }
 
      .clothings-box button{
@@ -949,11 +987,18 @@
           padding: 0;
      }
 
+     .title h1{
+          font-size: 30px;
+          font-weight: 500;
+     }
+
      .shoes-box{
-          width: 45%;
-          height: 600px;
-          margin: 10px 10px;
+          width: 47%;
+          height: 650px;
+          margin: 10px;
           display: flex;
+          background: #fff;
+          text-align: center;
           flex-direction: column;
      }
 
@@ -974,7 +1019,6 @@
           font-size: 25px;
      }
 
-
      .shoes-box button{
           font-size: 25px;
           padding: 5px;
@@ -992,10 +1036,11 @@
      }
 
      .watches-box{
-          width: 45%;
+          width: 47%;
           height: 600px;
-          margin: 10px 10px;
+          margin: 10px;
           display: flex;
+          background: #fff;
           flex-direction: column;
      }
 
@@ -1013,6 +1058,7 @@
 
      .watches-box small{
           font-size: 25px;
+          margin-top: -20px;
      }
 
      .watches-box button{
@@ -1063,6 +1109,18 @@
 
      .col-2 input{
           font-size: 25px;
+     }
+
+     .col-3 h2{
+          font-size: 80px;
+     }
+
+     .col-3 p{
+          font-size: 32px;
+     }
+
+     .icons li{
+          font-size: 40px;
      }
 }
 
@@ -1091,11 +1149,12 @@
 
      body{
           width: 100vw;
+          background: rgba(76, 118, 235, .05);
      }
 
      .logo{
-          width: 100px;
-          height: 80px;
+          width: 200px;
+          height: 180px;
           margin: 0;
           display: flex;
           align-items: center;
@@ -1106,16 +1165,19 @@
           height: 50%;
      }
 
-     .hamburger-menu.active .bar:nth-child(2){
+     .hamburger-menu.open .bar:nth-child(2){
           opacity: 0;
+          transition: all .5s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(1){
+     .hamburger-menu.open .bar:nth-child(1){
           transform: translateY(8px) rotate(45deg);
+          transition: all .5s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(3){
+     .hamburger-menu.open .bar:nth-child(3){
           transform: translateY(-24px) rotate(-45deg);
+          transition: all .5s ease;
      }
 
      .nav-menu{
@@ -1142,6 +1204,7 @@
 
      .nav-links{
           color: #000;
+          font-size: 35px;
      }
 
      .hamburger-menu{
@@ -1163,28 +1226,23 @@
      }
 
      .text-area h1{
-          font-size: 26px;
+          font-size: 36px;
           margin: 0;
-          padding: 0;
+          padding: 0 20px;
      }
 
      .text-area p{
-          font-size: 20px;
+          font-size: 33px;
           letter-spacing: 1.5px;
+          padding: 0 20px;
      }
 
      .text-area a{
-          width: 200px;
-          font-size: 22px;
+          width: 250px;
+          font-size: 28px;
           padding: 10px 25px;
      }
 
-     .image-box{
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          height: 550px;
-     }
 
      #clothing-container{
           width: 100%;
@@ -1208,7 +1266,7 @@
      }
 
      .title h1{
-          font-size: 25px;
+          font-size: 35px;
           color: #fff;
           text-align: center;
      }
@@ -1219,33 +1277,33 @@
           flex-wrap: wrap;
           margin: 0;
           padding: 0;
-          justify-content: space-around;
      }
 
      .clothings-box{
-          width: 46%;
-          height: 600px;
+          width: 48%;
+          height: 750px;
           display: flex;
+          background: #fff;
           flex-direction: column;
      }
 
      .clothings-box p{
-          font-size: 25px;
+          font-size: 30px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
      }
 
      .clothings-box small{
-          font-size: 25px;
+          font-size: 30px;
           padding-left: 5px;
      }
 
      .rating{
           width: 100%;
-          font-size: 28px;
+          font-size: 35px;
           padding-left: 5px;
-          padding-bottom: 7px;
+          padding-bottom: 3px;
      }
 
      .clothings-box img{
@@ -1254,7 +1312,7 @@
      }
 
      .clothings-box button{
-          font-size: 25px;
+          font-size: 28px;
           padding: 5px;
           position: absolute;
           top: 92%;
@@ -1267,37 +1325,37 @@
           flex-wrap: wrap;
           margin: 0;
           padding: 0;
-          justify-content: space-around;
      }
 
      .shoes-box{
-          width: 46%;
+          width: 48%;
           height: 700px;
           display: flex;
           flex-direction: column;
+          background: #fff;
      }
 
      .shoes-box img{
           width: 100%;
-          height: 70%;
+          height: 65%;
      }
 
      .shoes-box p{
-          font-size: 25px;
+          font-size: 30px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
      }
 
      .shoes-box small{
-          font-size: 23px;
+          font-size: 28px;
      }
 
-
      .shoes-box button{
-          font-size: 25px;
+          font-size: 30px;
           padding: 5px;
-          margin: 30px auto 0 auto;
+          position: absolute;
+          top: 91.5%;
      }
 
      .watches-box-container{
@@ -1306,18 +1364,18 @@
           flex-wrap: wrap;
           margin: 0;
           padding: 0;
-          justify-content: space-around;
      }
 
      .watches-box{
           width: 46%;
           height: 700px;
           display: flex;
+          background: #fff;
           flex-direction: column;
      }
 
      .watches-box p{
-          font-size: 25px;
+          font-size: 30px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
@@ -1325,18 +1383,19 @@
 
      .watches-box img{
           width: 100%;
-          height: 70%;
+          height: 60%;
      }
 
      .watches-box small{
-          font-size: 23px;
+          font-size: 30px;
           padding-left: 5px;
      }
 
      .watches-box button{
           font-size: 25px;
           padding: 5px;
-          margin: 35px auto 0 auto;
+          position: absolute;
+          top: 91.5%;
      }
 
      #footer{
@@ -1354,30 +1413,47 @@
           align-items: center;
      }
 
-     .col-1 a{
-          font-size: 25px;
+     .menu-links{
+          font-size: 35px;
      }
 
      .col-2{
-          width: 90%;
-          padding: 0;
+          width: 100%;
+          padding: 10px;
           margin: 0;
+          margin-bottom: 60px;
      }
 
      .col-2 h2{
           padding: 0;
           margin: 0;
-          font-size: 25px;
+          font-size: 65px;
+     }
+
+     .col-2 p{
+          font-size: 35px;
      }
 
      .col-2 button{
-          padding: 10px 5px;
-          margin: 0  90px;
-          font-size: 18px;
+          margin: 0 50px;
+          font-size: 35px;
           border-radius: 5px;
+          top: 100%;
      }
 
      .col-2 input{
           font-size: 25px;
+     }
+
+     .col-3 h2{
+          font-size: 80px;
+     }
+
+     .col-3 p{
+          font-size: 32px;
+     }
+
+     .icons li{
+          font-size: 40px;
      }
 }
