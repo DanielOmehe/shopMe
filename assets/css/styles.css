@@ -205,21 +205,21 @@ input[type = "number"]{
 }
 
 .clothings-box p{
-     font-size: 16px;
+     font-size: 18px;
      font-weight: 400;
      letter-spacing: .5px;
      padding-left: 10px;
 }
 
 .shoes-box p{
-     font-size: 16px;
+     font-size: 18px;
      font-weight: 400;
      letter-spacing: .5px;
      padding-left: 10px;
 }
 
 .watches-box p{
-     font-size: 16px;
+     font-size: 18px;
      font-weight: 400;
      letter-spacing: .5px;
      padding-left: 10px;
@@ -558,20 +558,20 @@ input[type = "number"]{
      }
      
      .clothings-box p{
-          font-size: 23px;
+          font-size: 14px;
           font-weight: 400;
           padding-left: 5px;
           padding-bottom: 5px;
      }
 
      .shoes-box p{
-          font-size: 23px;
+          font-size: 14px;
           font-weight: 450;
           padding-left: 5px;
      }
 
      .watches-box p{
-          font-size: 23px;
+          font-size: 14px;
           font-weight: 400;
           padding-left: 5px;
      }
@@ -853,21 +853,21 @@ input[type = "number"]{
      }
      
      .clothings-box p{
-          font-size: 25px;
+          font-size: 16px;
           font-weight: 400;
           padding-left: 5px;
           padding-bottom: 5px;
      }
 
      .shoes-box p{
-          font-size: 25px;
+          font-size: 16px;
           font-weight: 400;
           padding-left: 5px;
           padding-bottom: 5px;
      }
 
      .watches-box p{
-          font-size: 25px;
+          font-size: 16px;
           font-weight: 400;
           padding-left: 5px;
           padding-bottom: 5px;
@@ -1183,21 +1183,21 @@ input[type = "number"]{
      }
      
      .clothings-box p{
-          font-size: 25px;
+          font-size: 18px;
           font-weight: 400;
           padding-left: 5px;
           padding-bottom: 5px;
      }
 
      .shoes-box p{
-          font-size: 25px;
+          font-size: 18px;
           font-weight: 450;
           padding-left: 5px;
           padding-bottom: 5px;
      }
 
      .watches-box p{
-          font-size: 25px;
+          font-size: 18px;
           font-weight: 500;
           padding-left: 5px;
           padding-bottom: 5px;

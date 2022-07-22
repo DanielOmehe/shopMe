@@ -183,7 +183,7 @@
 
 .clothings-box p{
      padding-left: 5px;
-     font-size: 16px;
+     font-size: 18px;
 }
 
 .clothings-box small{
@@ -252,7 +252,7 @@
 
 .shoes-box p{
      padding-left: 5px;
-     font-size: 16px;
+     font-size: 18px;
 }
 
 .shoes-box small{
@@ -314,7 +314,7 @@
 
 .watches-box p{
      padding-left: 5px;
-     font-size: 16px;
+     font-size: 18px;
      padding-bottom: 5px;
 }
 
@@ -606,7 +606,7 @@
      }
 
      .clothings-box p{
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
           letter-spacing: 1px;
           padding-left: 5px;
@@ -659,13 +659,13 @@
      }
 
      .shoes-box p{
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 400;
           letter-spacing: 1px;
      }
 
      .shoes-box small{
-          font-size: 18px;
+          font-size: 14px;
      }
 
      .shoes-box button{
@@ -694,7 +694,7 @@
      }
 
      .watches-box p{
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 400;
           letter-spacing: 1px;
      }
@@ -948,7 +948,7 @@
      }
 
      .clothings-box p{
-          font-size: 25px;
+          font-size: 16px;
           font-weight: 400;
           letter-spacing: 1px;
           padding-left: 5px;
@@ -1009,7 +1009,7 @@
      }
 
      .shoes-box p{
-          font-size: 25px;
+          font-size: 16px;
           padding-left: 5px;
           font-weight: 400;
           letter-spacing: 1px;
@@ -1046,7 +1046,7 @@
      }
 
      .watches-box p{
-          font-size: 25px;
+          font-size: 16px;
           padding-left: 5px;
           font-weight: 400;
           letter-spacing: 1px;
@@ -1288,7 +1288,7 @@
      }
 
      .clothings-box p{
-          font-size: 30px;
+          font-size: 18px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
@@ -1341,7 +1341,7 @@
      }
 
      .shoes-box p{
-          font-size: 30px;
+          font-size: 18px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
@@ -1375,7 +1375,7 @@
      }
 
      .watches-box p{
-          font-size: 30px;
+          font-size: 18px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
