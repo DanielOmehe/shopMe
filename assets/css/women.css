@@ -172,7 +172,7 @@
      border-radius: 3px;
      position: relative;
      text-align: center;
-     box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+     box-shadow: 0 0 2px rgba(0,0,0,.25);
      overflow: hidden;
 }
 
@@ -183,12 +183,12 @@
 
 .clothings-box p{
      padding-left: 5px;
-     font-size: 16px;
+     font-size: 18px;
 }
 
 .clothings-box small{
      padding-left: 5px;
-     font-size: 15px;
+     font-size: 18px;
 }
 
 .rating{
@@ -206,6 +206,7 @@
      border: 1px solid rgba(255, 255, 255, .95);
      background: #3f51b5;
      color: #fff;
+     font-size: 18px;
 }
 
 .clothings-box:hover{
@@ -251,12 +252,12 @@
 
 .shoes-box p{
      padding-left: 5px;
-     font-size: 16px;
+     font-size: 18px;
 }
 
 .shoes-box small{
      padding-left: 5px;
-     font-size: 15px;
+     font-size: 18px;
 }
 
 .shoes-box button{
@@ -268,6 +269,7 @@
      border: 1px solid rgba(255, 255, 255, .95);
      background: #3f51b5;
      color: #fff;
+     font-size: 18px;
 }
 
 .shoes-box:hover{
@@ -312,14 +314,14 @@
 
 .watches-box p{
      padding-left: 5px;
-     font-size: 16px;
+     font-size: 18px;
      padding-bottom: 5px;
 }
 
 .watches-box small{
      padding-left: 5px;
      bottom: 5px;
-     font-size: 15px;
+     font-size: 18px;
 }
 
 .watches-box button{
@@ -331,6 +333,7 @@
      border: 1px solid rgba(255, 255, 255, .95);
      background: #3f51b5;
      color: #fff;
+     font-size: 18px;
 }
 
 .watches-box:hover{
@@ -604,14 +607,14 @@
      }
 
      .clothings-box p{
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
           letter-spacing: 1px;
           padding-left: 5px;
      }
 
      .clothings-box small{
-          font-size: 16px;
+          font-size: 14px;
           padding-left: 5px;
      }
 
@@ -627,7 +630,7 @@
      }
 
      .clothings-box button{
-          font-size: 18px;
+          font-size: 14px;
           padding: 5px;
           position: absolute;
           left: 5px;
@@ -657,17 +660,17 @@
      }
 
      .shoes-box p{
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 400;
           letter-spacing: 1px;
      }
 
      .shoes-box small{
-          font-size: 18px;
+          font-size: 14px;
      }
 
      .shoes-box button{
-          font-size: 18px;
+          font-size: 14px;
           padding: 5px;
           position: absolute;
           left: 5px;
@@ -692,7 +695,7 @@
      }
 
      .watches-box p{
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 400;
           letter-spacing: 1px;
      }
@@ -703,11 +706,11 @@
      }
 
      .watches-box small{
-          font-size: 16px;
+          font-size: 14px;
      }
 
      .watches-box button{
-          font-size: 16px;
+          font-size: 14px;
           padding: 5px;
           position: absolute;
           left: 6px;
@@ -946,7 +949,7 @@
      }
 
      .clothings-box p{
-          font-size: 23px;
+          font-size: 16px;
           font-weight: 400;
           letter-spacing: 1px;
           padding-left: 5px;
@@ -954,7 +957,7 @@
      }
 
      .clothings-box small{
-          font-size: 25px;
+          font-size: 16px;
           padding-left: 5px;
      }
 
@@ -964,7 +967,7 @@
      }
 
      .clothings-box button{
-          font-size: 25px;
+          font-size: 16px;
           padding: 10px;
           position: absolute;
           left: 8px;
@@ -1000,7 +1003,7 @@
      }
 
      .shoes-box p{
-          font-size: 23px;
+          font-size: 16px;
           padding-left: 5px;
           font-weight: 400;
           letter-spacing: 1px;
@@ -1008,12 +1011,12 @@
      }
 
      .shoes-box small{
-          font-size: 23px;
+          font-size: 16px;
           margin-top: -15px;
      }
 
      .shoes-box button{
-          font-size: 25px;
+          font-size: 16px;
           padding: 5px;
           position: absolute;
           left: 8px;
@@ -1038,7 +1041,7 @@
      }
 
      .watches-box p{
-          font-size: 23px;
+          font-size: 16px;
           padding-left: 5px;
           font-weight: 400;
           letter-spacing: 1px;
@@ -1050,12 +1053,12 @@
      }
 
      .watches-box small{
-          font-size: 23px;
+          font-size: 16px;
           margin-top: -20px;
      }
 
      .watches-box button{
-          font-size: 25px;
+          font-size: 16px;
           padding: 5px;
           position: absolute;
           left: 8px;
@@ -1296,14 +1299,14 @@
      }
 
      .clothings-box p{
-          font-size: 30px;
+          font-size: 18px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
      }
 
      .clothings-box small{
-          font-size: 30px;
+          font-size: 18px;
           padding-left: 5px;
      }
 
@@ -1320,7 +1323,7 @@
      }
 
      .clothings-box button{
-          font-size: 28px;
+          font-size: 18px;
           padding: 5px;
           position: absolute;
           top: 92%;
@@ -1349,18 +1352,18 @@
      }
 
      .shoes-box p{
-          font-size: 30px;
+          font-size: 18px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
      }
 
      .shoes-box small{
-          font-size: 28px;
+          font-size: 18px;
      }
 
      .shoes-box button{
-          font-size: 30px;
+          font-size: 18px;
           padding: 5px;
           position: absolute;
           top: 91.5%;
@@ -1383,7 +1386,7 @@
      }
 
      .watches-box p{
-          font-size: 30px;
+          font-size: 18px;
           font-weight: 400;
           padding-bottom: 7px;
           padding-right: 0;
@@ -1395,12 +1398,12 @@
      }
 
      .watches-box small{
-          font-size: 30px;
+          font-size: 18px;
           padding-left: 5px;
      }
 
      .watches-box button{
-          font-size: 25px;
+          font-size: 18px;
           padding: 5px;
           position: absolute;
           top: 91.5%;
