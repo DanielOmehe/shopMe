@@ -480,11 +480,11 @@
      position: relative;
      overflow: hidden;
      background: #fff;
-     box-shadow: 0 0 2px rgba(0,0,0,.45);
+     box-shadow: 0 0 2px rgba(0,0,0,.25);
 }
 
 .shoes-box{
-     width: 40%;
+     width: 25%;
      height: 400px;
      margin: 5px;
      display: flex;
@@ -494,11 +494,11 @@
      position: relative;
      overflow: hidden;
      background: #fff;
-     box-shadow: 0 0 2px rgba(0,0,0,.45);
+     box-shadow: 0 0 2px rgba(0,0,0,.25);
 } 
 
 .watches-box{
-     width: 40%;
+     width: 25%;
      height: 400px;
      margin: 5px;
      display: flex;
@@ -508,7 +508,7 @@
      position: relative;
      overflow: hidden;
      background: #fff;
-     box-shadow: 0 0 2px rgba(0,0,0,.45);
+     box-shadow: 0 0 2px rgba(0,0,0,.25);
 }
 
 .clothings-box button{
@@ -754,6 +754,8 @@
      font-size: 18px;
      border-radius: 35px;
      align-items: center;
+     position: absolute;
+     top: 90%;
 }
 
 .col-3{
@@ -770,7 +772,7 @@
      margin-bottom: 30px;
 }
 
-.col-3 a{
+.icons a{
      font-size: 30px;
      color: #fff;
      list-style: none;
@@ -789,7 +791,7 @@ a{
 @media only screen and (min-width: 320px) and (max-width: 479px){
      #header{
           width: 100vw;
-          height: 110vh;
+          height: 120vh;
           margin-bottom: 10px;
           padding: 0;
      }
@@ -878,12 +880,12 @@ a{
      }
 
      .text-box h1{
-          font-size: 25px;
+          font-size: 20px;
           padding-left: 5px;
      }
 
      .text-box p{
-          font-size: 20px;
+          font-size: 18px;
           letter-spacing: 0;
           word-spacing: 0;
           padding-left: 5px;
@@ -891,18 +893,22 @@ a{
 
      .text-box a{
           font-size: 20px;
+          margin-top: 10px;
      }
 
      .user-box{
           width: 100%;
           background: none;
           left: 0;
-          top: 50%;
+          top: -5%;
+          position: relative;
      }
 
      .user-box img{
-          width: 90%;
-          margin: -180px auto 180px;
+          width: 400px;
+          position: absolute;
+          top: 0;
+          left: 10%;
      }
 
      #product-container{
@@ -959,7 +965,7 @@ a{
      }
 
      .product{
-          width: 60px;
+          width: 100px;
           height: 50px;
           margin: 5px 5px;
      }
@@ -1064,7 +1070,24 @@ a{
 
      .clothings-box{
           width: 46%;
+          height: 350px;
           margin: 8px;
+     }
+
+     .clothings-box p{
+          font-size: 16px;
+     }
+
+     .clothings-box small{
+          font-size: 16px;
+     }
+
+     .clothings-box button{
+          top: 88%;
+     }
+
+     .rating{
+          font-size: 16px;
      }
 
      .shoes-box{
@@ -1072,9 +1095,34 @@ a{
           margin: 8px;
      }
 
+     .shoes-box p{
+          font-size: 16px;
+     }
+
+     .shoes-box small{
+          font-size: 16px;
+     }
+
+     .shoes-box button{
+          top: 88%;
+     }
+
      .watches-box{
           width: 46%;
+          height: 400px;
           margin: 8px;
+     }
+
+     .watches-box p{
+          font-size: 16px;
+     }
+
+     .watches-box small{
+          font-size: 16px;
+     }
+
+     .watches-box button{
+          top: 88%;
      }
 
      .mens-brands-container{
@@ -1119,14 +1167,14 @@ a{
      }
 
      .col-2 h2{
-          font-size: 30px;
+          font-size: 20px;
           padding: 0;
           margin: 0;
           width: 100%;
      }
 
      .col-2 p{
-          font-size: 20px;
+          font-size: 18px;
           text-align: left;
           padding-left: 30px;
      }
@@ -1136,8 +1184,8 @@ a{
      }
 
      .col-3 h2{
-          font-size: 35px;
-          margin-bottom: -6px;
+          font-size: 20px;
+          margin-bottom: 0;
      }
 
      .col-3 p{
@@ -1147,8 +1195,8 @@ a{
           margin-bottom: -1px;
      }
 
-     .col-3 a{
-          padding: 2px;
+     .icons a{
+        font-size: 18px;  
      }
 }
 
