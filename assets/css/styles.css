@@ -60,14 +60,16 @@ body{
      padding: 0 20px;
 }
 
-.product-image {
+.product-image{
      width: 40%;
-     height: 600px;
+     height: 500px;
      margin: 20px;
 }
 
 .product-image img{
      width: 100%;
+     height: 100%;
+     border: 1px solid red;
 }
 
 .product-details{
@@ -154,26 +156,26 @@ input[type = "number"]{
 }
 
 .clothings-box{
-     width: 20%;
+     width: 30%;
      height: 450px;
      margin: 5px;
      display: flex;
      flex-direction: column;
      border-radius: 3px;
      position: relative;
-     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     box-shadow: 0 0 2px rgba(0,0,0,.25);
      overflow: hidden;
 }
 
 .shoes-box{
-     width: 20%;
+     width: 30%;
      height: 400px;
      margin: 30px 20px;
      display: flex;
      flex-direction: column;
      border-radius: 3px;
      position: relative;
-     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     box-shadow: 0 0 2px rgba(0,0,0,.25);
      overflow: hidden;
 }
 
@@ -185,7 +187,7 @@ input[type = "number"]{
      flex-direction: column;
      border-radius: 3px;
      position: relative;
-     box-shadow: 0 5px 10px  0 rgba(0,0,0,.25);
+     box-shadow: 0 0 2px rgba(0,0,0,.25);
      overflow: hidden;
 }
 
@@ -437,17 +439,17 @@ input[type = "number"]{
           transition: all .3s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(2){
+     .hamburger-menu.open .bar:nth-child(2){
           opacity: 0;
           transition: all .6s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(1){
+     .hamburger-menu.open .bar:nth-child(1){
           transform: translateY(8px) rotate(45deg);
           transition: all .6s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(3){
+     .hamburger-menu.open .bar:nth-child(3){
           transform: translateY(-24px) rotate(-45deg);
           transition: all .6s ease;
      }
@@ -456,7 +458,7 @@ input[type = "number"]{
           margin: 20px;
      }
 
-     .nav-menu.active{
+     .nav-menu.open{
           left: 0;
      }
 
@@ -494,11 +496,11 @@ input[type = "number"]{
      }
 
      #size{
-          font-size: 30px;
+          font-size: 20px;
      }
 
      #number{
-          font-size: 30px;
+          font-size: 10px;
      }
 
      .product-details button{
@@ -516,15 +518,21 @@ input[type = "number"]{
           height: 100vh;
      }
 
-     .product-details img{
-          width: 100%;
-          height: 100px;
-          margin-top: 15px;
-     }
-
      .product-details{
           width: 100%;
           padding: 10px 20px;
+     }
+
+     .product-image{
+          width: 100%;
+          margin-top: 30px;
+          height: 0;
+          border: 1px solid red;
+     }
+
+     .product-image img{
+          height: 300px;
+          width: 90%;
      }
 
      .related-products{
@@ -722,17 +730,17 @@ input[type = "number"]{
           transition: all .3s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(2){
+     .hamburger-menu.open .bar:nth-child(2){
           opacity: 0;
           transition: all .6s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(1){
+     .hamburger-menu.open .bar:nth-child(1){
           transform: translateY(8px) rotate(45deg);
           transition: all .6s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(3){
+     .hamburger-menu.open .bar:nth-child(3){
           transform: translateY(-24px) rotate(-45deg);
           transition: all .6s ease;
      }
@@ -741,7 +749,7 @@ input[type = "number"]{
           margin: 20px;
      }
 
-     .nav-menu.active{
+     .nav-menu.open{
           left: 0;
      }
 
@@ -1044,17 +1052,17 @@ input[type = "number"]{
           transition: all .3s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(2){
+     .hamburger-menu.open .bar:nth-child(2){
           opacity: 0;
           transition: all .6s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(1){
+     .hamburger-menu.open .bar:nth-child(1){
           transform: translateY(8px) rotate(45deg);
           transition: all .6s ease;
      }
 
-     .hamburger-menu.active .bar:nth-child(3){
+     .hamburger-menu.open .bar:nth-child(3){
           transform: translateY(-24px) rotate(-45deg);
           transition: all .6s ease;
      }
@@ -1063,7 +1071,7 @@ input[type = "number"]{
           margin: 20px;
      }
 
-     .nav-menu.active{
+     .nav-menu.open{
           left: 0;
      }
 
@@ -1166,7 +1174,7 @@ input[type = "number"]{
 
      .clothings-box{
           width: 47%;
-          height: 550px;
+          height: 350px;
           margin: 10px 10px;
      }
 
