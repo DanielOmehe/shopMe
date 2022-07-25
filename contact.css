@@ -311,7 +311,7 @@ label{
           margin: 20px;
      }
 
-     .nav-menu.active{
+     .nav-menu.open{
           left: 0;
      }
 
@@ -331,6 +331,14 @@ label{
 
      .container{
           width: 100%;
+     }
+
+     .container h1{
+          font-size: 30px;
+     }
+
+     .container p{
+          font-size: 14px;
      }
 
      .text-area{
