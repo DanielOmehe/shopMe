@@ -404,7 +404,6 @@ label{
 
      .col-2{
           width: inherit;
-          border: 1px solid white;
           padding: 0  10px;
      }
 
@@ -441,6 +440,396 @@ label{
 
      .col-3 p{
           font-size: 16px;
+          margin-bottom: 10px;
+     }
+}
+
+/*Media Query For Tablets*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+     #header{
+          width: 100%;
+          flex-direction: column;
+          margin-bottom: 10px;
+     }
+
+     .navbar{
+          width: 100%;
+          background: transparent;
+          margin-bottom: 35px;
+          padding: 0;
+     }
+
+     .logo{
+          width: 120px;
+          margin-left: -35px;
+     }
+
+     .logo img{
+          width: 100%;
+     }
+
+     .hamburger-menu{
+          display: block;
+          margin-right: 30px;
+     }
+
+     .nav-menu{
+          position: fixed;
+          display: flex;
+          background: #000;
+          flex-direction: column;
+          left: -100%;
+          top: 7%;
+          width: 100vw;
+          height: 500px;
+          align-items: center;
+          justify-content: center;
+          transition: all .3s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(2){
+          opacity: 0;
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .6s ease;
+     }
+
+     .list-items{
+          margin: 20px;
+     }
+
+     .nav-menu.open{
+          left: 0;
+     }
+
+     .hamburger-menu{
+          display: block;
+          margin-right: -40px;
+     }
+
+     .nav-links{
+          color: #fff;
+          font-size: 23px;         
+     }
+
+     .nav-links:hover{
+          color: #3f51b4;
+     }
+
+     .container{
+          width: 100%;
+     }
+
+     .container h1{
+          font-size: 40px;
+     }
+
+     .container p{
+          font-size: 16px;
+     }
+
+     .text-area{
+          width: 100%;
+          padding: 5px;
+     }
+
+     .contact-box{
+          flex-direction: column;
+     }
+
+     .contact-box label{
+          font-size: 16px;
+     }
+
+     .contact-box input{
+          font-size: 18px;
+     }
+
+     .contact-left{
+          padding: 20px;
+          width: 100%;
+     }
+
+     .contact-left h3{
+          font-size: 35px;
+     }
+
+     .contact-left textarea{
+          font-size: 20px;
+     }
+
+     .contact-left button{
+          font-size: 18px;
+     }
+
+     .contact-right{
+          width: 100%;
+          padding: 30px ;
+     }
+
+     .contact-right h3{
+          font-size: 35px;
+     }
+
+     .contact-right tr td{
+          font-size: 16px;
+     }
+
+     #footer{
+          flex-direction: column;
+     }
+
+     .col-1{
+          width: 100%;
+          padding: 40px 80px;
+     }
+
+     .menu-links{
+          font-size: 18px;
+          margin: 10px;
+     }
+
+     .col-2{
+          width: inherit;
+          padding: 0  10px;
+     }
+
+     .col-2 h2{
+          font-size: 35px;
+          margin-bottom: -5px;
+     }
+
+     .col-2 p{
+          font-size: 18px;
+          margin-bottom: 5px;
+     }
+
+     .col-2 button{
+          font-size: 16px;
+          padding: 10px;
+          border-radius: 5px;
+     }
+
+     .col-2 input{
+          font-size: 18px;
+     }
+
+     .col-3{
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+     }
+
+     .col-3 h2{
+          font-size: 35px;
+          margin-bottom: 0;
+     }
+
+     .col-3 p{
+          font-size: 18px;
+          margin-bottom: 10px;
+     }
+}
+
+/*Media Query For Ipads*/
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+     #header{
+          width: 100%;
+          flex-direction: column;
+          margin-bottom: 10px;
+     }
+
+     .navbar{
+          width: 100%;
+          background: transparent;
+          margin-bottom: 35px;
+          padding: 0;
+     }
+
+     .logo{
+          width: 120px;
+          margin-left: -35px;
+     }
+
+     .logo img{
+          width: 100%;
+     }
+
+     .hamburger-menu{
+          display: block;
+          margin-right: 30px;
+     }
+
+     .nav-menu{
+          position: fixed;
+          display: flex;
+          background: #000;
+          flex-direction: column;
+          left: -100%;
+          top: 7%;
+          width: 100vw;
+          height: 500px;
+          align-items: center;
+          justify-content: center;
+          transition: all .3s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(2){
+          opacity: 0;
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+          transition: all .6s ease;
+     }
+
+     .hamburger-menu.open .bar:nth-child(3){
+          transform: translateY(-24px) rotate(-45deg);
+          transition: all .6s ease;
+     }
+
+     .list-items{
+          margin: 20px;
+     }
+
+     .nav-menu.open{
+          left: 0;
+     }
+
+     .hamburger-menu{
+          display: block;
+          margin-right: -40px;
+     }
+
+     .nav-links{
+          color: #fff;
+          font-size: 23px;         
+     }
+
+     .nav-links:hover{
+          color: #3f51b4;
+     }
+
+     .container{
+          width: 100%;
+     }
+
+     .container h1{
+          font-size: 50px;
+     }
+
+     .container p{
+          font-size: 20px;
+     }
+
+     .text-area{
+          width: 100%;
+          padding: 5px;
+     }
+
+     .contact-box{
+          flex-direction: column;
+     }
+
+     .contact-box label{
+          font-size: 18px;
+     }
+
+     .contact-box input{
+          font-size: 20px;
+     }
+
+     .contact-left{
+          padding: 20px;
+          width: 100%;
+     }
+
+     .contact-left h3{
+          font-size: 25px;
+     }
+
+     .contact-left textarea{
+          font-size: 20px;
+     }
+
+     .contact-left button{
+          font-size: 20px;
+     }
+
+     .contact-right{
+          width: 100%;
+          padding: 30px ;
+     }
+
+     .contact-right h3{
+          font-size: 45px;
+     }
+
+     .contact-right tr td{
+          font-size: 14px;
+     }
+
+     #footer{
+          flex-direction: column;
+     }
+
+     .col-1{
+          width: 100%;
+          padding: 40px 80px;
+     }
+
+     .menu-links{
+          font-size: 20px;
+          margin: 10px;
+     }
+
+     .col-2{
+          width: inherit;
+          padding: 0  10px;
+     }
+
+     .col-2 h2{
+          font-size: 45px;
+          margin-bottom: -5px;
+     }
+
+     .col-2 p{
+          font-size: 18px;
+          margin-bottom: 5px;
+     }
+
+     .col-2 button{
+          font-size: 18px;
+          padding: 10px;
+          border-radius: 5px;
+     }
+
+     .col-2 input{
+          font-size: 20px;
+     }
+
+     .col-3{
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+     }
+
+     .col-3 h2{
+          font-size: 45px;
+          margin-bottom: 0;
+     }
+
+     .col-3 p{
+          font-size: 18px;
           margin-bottom: 10px;
      }
 }
