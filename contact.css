@@ -322,7 +322,7 @@ label{
 
      .nav-links{
           color: #fff;
-          font-size: 23px;         
+          font-size: 16px;         
      }
 
      .nav-links:hover{
@@ -334,7 +334,7 @@ label{
      }
 
      .container h1{
-          font-size: 30px;
+          font-size: 25px;
      }
 
      .container p{
@@ -529,7 +529,7 @@ label{
      }
 
      .container h1{
-          font-size: 40px;
+          font-size: 30px;
      }
 
      .container p{
@@ -572,7 +572,7 @@ label{
 
      .contact-right{
           width: 100%;
-          padding: 30px ;
+          padding: 30px;
      }
 
      .contact-right h3{
@@ -599,7 +599,7 @@ label{
 
      .col-2{
           width: inherit;
-          padding: 0  10px;
+          padding: 0 10px;
      }
 
      .col-2 h2{
@@ -608,12 +608,12 @@ label{
      }
 
      .col-2 p{
-          font-size: 18px;
+          font-size: 16px;
           margin-bottom: 5px;
      }
 
      .col-2 button{
-          font-size: 16px;
+          font-size: 18px;
           padding: 10px;
           border-radius: 5px;
      }
@@ -634,7 +634,7 @@ label{
      }
 
      .col-3 p{
-          font-size: 18px;
+          font-size: 16px;
           margin-bottom: 10px;
      }
 }
@@ -712,7 +712,7 @@ label{
 
      .nav-links{
           color: #fff;
-          font-size: 23px;         
+          font-size: 20px;         
      }
 
      .nav-links:hover{
@@ -724,11 +724,11 @@ label{
      }
 
      .container h1{
-          font-size: 50px;
+          font-size: 40px;
      }
 
      .container p{
-          font-size: 20px;
+          font-size: 18px;
      }
 
      .text-area{
@@ -754,7 +754,7 @@ label{
      }
 
      .contact-left h3{
-          font-size: 25px;
+          font-size: 45px;
      }
 
      .contact-left textarea{
@@ -762,12 +762,12 @@ label{
      }
 
      .contact-left button{
-          font-size: 20px;
+          font-size: 18px;
      }
 
      .contact-right{
           width: 100%;
-          padding: 30px ;
+          padding: 30px;
      }
 
      .contact-right h3{
@@ -775,7 +775,7 @@ label{
      }
 
      .contact-right tr td{
-          font-size: 14px;
+          font-size: 18px;
      }
 
      #footer{
