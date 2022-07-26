@@ -16,6 +16,44 @@
      transition: animation all .8s ease;
 }
 
+#backToTop{
+     width: 40px;
+     height: 40px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border-radius: 20px;
+     margin: 0;
+     padding: 0;
+     position: fixed;
+     left: 95%;
+     top: 93%;
+     font-size: 20px;
+     border: 1px solid rgba(0, 0, 0, .42);
+     animation: up 2s infinite;
+     z-index: 1;
+}
+
+#backToTop.hide{
+     opacity: 0;
+     transition: all .6s ease;
+}
+
+#backToTop.show{
+     opacity: 1;
+     transition: all .6s ease;
+}
+
+@keyframes up {
+     0%,100%{
+          transform: translateY(0);
+     }
+     50%{
+          transform: translateY(-20px);
+     }
+}
+
 @keyframes changeBackground {
      0%{
           background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("images/balenciaga-background.jpg");
@@ -520,6 +558,12 @@
 
      .hamburger-menu{
           display: block;
+     }
+
+     #backToTop{
+          z-index: 1;
+          left: 420px;
+          top: 860px;
      }
 
      #container{
